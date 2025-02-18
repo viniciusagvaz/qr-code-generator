@@ -5,6 +5,7 @@ import { LinkInput } from '../../ui/LinkInput';
 import { QrCodeComponent } from '../../ui/QrCode';
 
 
+
 export const Main = () => {
   const [link, setLink] = useState('')
 
