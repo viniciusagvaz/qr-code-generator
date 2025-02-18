@@ -1,11 +1,13 @@
 import styled from "styled-components";
 
-export const Footer = styled.footer`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 5px;
+export const DefaultLayout = styled.div`
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  gap: 20px;
+  
+  min-height: 100vh;
+  width: 100%;
+
   color: ${({ theme }) => theme["--primary-200"]};
   background: ${({ theme }) => theme["--background-gradient"]};
-  height: 10vh;
 `;

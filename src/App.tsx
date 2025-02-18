@@ -1,17 +1,14 @@
 import { ThemeProvider } from 'styled-components'
-import { darkTheme } from './styles/themes/themes'
-import { Main } from './layout/Main'
-import { GlobalStyles } from './styles/themes/GlobalStyles'
-import { Footer } from './layout/Footer'
-import { Header } from './layout/Header'
+import { GlobalStyles } from './styles/GlobalStyles'
+import { theme } from './styles/themes/themes'
+
+import { DefaultLayout } from './layout/DefaultLayout'
 
 export function App() {
   return (
-    <ThemeProvider theme={darkTheme}>
+    <ThemeProvider theme={theme}>
       <GlobalStyles />
-      <Header />
-      <Main />
-      <Footer />
+      <DefaultLayout />
     </ThemeProvider>
   )
 }

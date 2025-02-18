@@ -1,16 +1,13 @@
 import styled from "styled-components";
 
-export const Header = styled.header`
+export const Footer = styled.footer`
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 0.5rem;
+
+  font-size: 1.25rem;
   color: ${({ theme }) => theme["--primary-200"]};
   background: ${({ theme }) => theme["--background-gradient"]};
-  padding: 20px 0;
-  position: relative;
-  top: 0;
-  height: 20vh;
+  padding: 2rem 0;
 `;
-
-

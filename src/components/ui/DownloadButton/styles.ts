@@ -1,17 +1,29 @@
 import styled from "styled-components";
 
-
 export const DownloadButton = styled.input`
-  font-size: 16px;
-  padding: 12px 24px;
-  border: none;
-  border-radius: 5px;
+  width: 60%;
+
+  padding: 1.2rem 2.4rem;
+  margin-top: 2rem;
+
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: ${(props) => props.theme["--primary-200"]};
+
+  background-color: transparent;
+  border: 1px solid ${(props) => props.theme["--primary-200"]};
+  border-radius: 4px;
+
+  transition: background-color 0.6s ease, color 0.3s ease;
   cursor: pointer;
-  margin-top: 20px;
-  width: 70%;
-  transition: background-color 0.3s ease;
 
   &:hover {
-    background-color: #ccc;
+    background-color: ${(props) => props.theme["--primary-200"]};
+    color: #000;
+  }
+
+  .disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
   }
 `;
