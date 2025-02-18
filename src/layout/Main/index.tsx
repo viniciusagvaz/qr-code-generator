@@ -1,7 +1,8 @@
 import QRCode from 'react-qr-code';
 import * as S from './styles';
 import { useState } from 'react';
-import useDownloadQRCode from '../../hooks/useDownloadQRCode';
+import { Title } from '../../components/common/Title/styles';
+import { DownloadButton } from '../../components/ui/DownloadButton';
 
 
 export const Main = () => {
@@ -12,12 +13,10 @@ export const Main = () => {
     setLink(e.target.value)
   }
 
-  const { handleDownload } = useDownloadQRCode()
-
   return (
     <S.Main>
       <S.Container >
-        <S.Title>QRCode Generator</S.Title>
+        <Title children={'QRCode Generator'} />
         <S.QrCodeContainer>
           {link ?
             <QRCode
@@ -29,11 +28,7 @@ export const Main = () => {
             /> : <h1>Insira um link</h1>}
         </S.QrCodeContainer>
         <S.LinkInput placeholder='Insira um link' value={link} onChange={handleInput} />
-        <S.DownloadButton
-          type="button"
-          value="Download QR"
-          onClick={handleDownload}
-        />
+        <DownloadButton />
       </S.Container>
     </S.Main>
   );

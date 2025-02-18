@@ -19,12 +19,11 @@ a {
 }
 
 body {
-    background-color: ${({ theme }) => theme["--background-gradient"]};
-    min-height: 100vh;
-}
-
-#root {
-  max-width: 1280px;
+  min-height: 100vh;
+  }
+  
+  #root {
+    max-width: 1280px;
   margin: 0 auto;
   text-align: center;
 }

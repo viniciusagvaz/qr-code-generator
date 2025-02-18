@@ -15,6 +15,7 @@ export const lightTheme = {
 };
 
 export const darkTheme = {
+  "--primary-200": "#f4f3ee",
   "--primary-500": "#85747a",
   "--primary-600": "#9c9b9b",
   "--primary-700": "#c2b9bc",

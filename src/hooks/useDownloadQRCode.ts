@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 
-const useDownloadQRCode = () => {
+export const useDownloadQRCode = () => {
   const [svgData, setSvgData] = useState<string | null>(null);
   const [pngFile, setPngFile] = useState<string | null>(null);
 
@@ -41,5 +41,3 @@ const useDownloadQRCode = () => {
 
   return { handleDownload };
 };
-
-export default useDownloadQRCode;

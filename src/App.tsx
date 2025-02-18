@@ -4,7 +4,6 @@ import { Main } from './layout/Main'
 import { GlobalStyles } from './styles/themes/GlobalStyles'
 
 export function App() {
-
   return (
     <ThemeProvider theme={darkTheme}>
       <GlobalStyles />
