@@ -1,17 +1,12 @@
-import { useState } from 'react';
 import * as S from './styles';
 
 export interface ILinkInput {
-  onChange: (value: string) => void;
+  onChange: React.Dispatch<React.SetStateAction<string>>;
   value: string;
 }
 
-export const LinkInput: React.FC<ILinkInput> = ({ value }) => {
-  const [inputLink, setLink] = useState(value);
+export const LinkInput: React.FC<ILinkInput> = ({ onChange, value: inputLink }) => {
+  const onChangeValue = (e: React.ChangeEvent<HTMLInputElement>) => onChange(e.target.value)
 
-  const handleInput = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setLink(e.target.value);
-  };
-
-  return <S.LinkInput placeholder={'Insira um link'} value={inputLink} onChange={handleInput} />;
+  return <S.LinkInput placeholder={'Insira um link'} value={inputLink} onChange={onChangeValue} />;
 };
