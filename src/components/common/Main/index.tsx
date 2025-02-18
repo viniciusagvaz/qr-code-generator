@@ -14,8 +14,7 @@ export const Main = () => {
       <S.Container >
         <QrCodeComponent link={link} />
         <LinkInput value={link} onChange={setLink} />
-        {link ? <DownloadButton /> : <DownloadButton disabled  />}
-        {/* <DownloadButton /> */}
+        {link ? <DownloadButton /> : <DownloadButton disabled />}
       </S.Container>
     </S.Main>
   );

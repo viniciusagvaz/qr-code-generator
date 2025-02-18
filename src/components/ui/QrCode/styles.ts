@@ -21,6 +21,12 @@ export const QrCodePlaceholder = styled.figure`
   max-width: 230px;
   width: 100%;
   height: 230px;
+<<<<<<< HEAD
+=======
+  
+  background: url(../../../assets/qr.svg) no-repeat center center / cover
+    ${({ theme }) => theme["--primary-200"]};
+>>>>>>> f7456135e6bd1d5bf4c19970eb7b54da59bdd94f
 
   padding: 0;
   margin: 0;
