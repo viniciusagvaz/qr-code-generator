@@ -1,7 +1,7 @@
 import * as S from './styles';
 
 import QRCode from 'react-qr-code';
-import qr from '../../../assets/qr.svg'
+import qr from '../../../assets/qr.svg';
 
 interface IQrCode {
   link: string | null;
