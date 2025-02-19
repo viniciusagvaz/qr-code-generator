@@ -1,21 +1,20 @@
-import * as S from './styles';
-import { useState } from 'react';
-import { DownloadButton } from '../../ui/DownloadButton';
-import { LinkInput } from '../../ui/LinkInput';
-import { QrCodeComponent } from '../../ui/QrCode';
-
-
+import * as S from "./styles";
+import { useState } from "react";
+import { DownloadButton } from "../../ui/DownloadButton";
+import { LinkInput } from "../../ui/LinkInput";
+import { QrCode } from "../../ui/QrCode";
 
 export const Main = () => {
-  const [link, setLink] = useState('')
+  const [link, setLink] = useState("");
+  const isLinkEmpty = link ? <DownloadButton /> : <DownloadButton disabled />;
 
   return (
     <S.Main>
-      <S.Container >
-        <QrCodeComponent link={link} />
+      <S.Container>
+        <QrCode link={link} />
         <LinkInput value={link} onChange={setLink} />
-        {link ? <DownloadButton /> : <DownloadButton disabled />}
+        {isLinkEmpty}
       </S.Container>
     </S.Main>
   );
-}
+};

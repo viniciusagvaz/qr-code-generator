@@ -1,12 +1,10 @@
-import * as S from './styles';
+import * as S from "./styles";
 
-import { Header } from '../../components/common/Header/index.tsx';
-import { Main } from '../../components/common/Main/index.tsx';
-import { Footer } from '../../components/common/Footer/index.tsx';
-
+import { Header } from "../../components/common/Header/index.tsx";
+import { Main } from "../../components/common/Main/index.tsx";
+import { Footer } from "../../components/common/Footer/index.tsx";
 
 export const DefaultLayout = () => {
-
   return (
     <S.DefaultLayout>
       <Header />
@@ -14,5 +12,4 @@ export const DefaultLayout = () => {
       <Footer />
     </S.DefaultLayout>
   );
-
-}
+};

@@ -1,24 +1,25 @@
-import * as S from './styles';
-import { useDownloadQRCode } from '../../../hooks/useDownloadQRCode';
+import * as S from "./styles";
+import { useDownloadQRCode } from "../../../hooks/useDownloadQRCode";
 
-interface DownloadButtonProps {
+interface IDownloadButton {
   disabled?: boolean;
 }
 
-export const DownloadButton: React.FC<DownloadButtonProps> = ({ disabled }) => {
-  const { handleDownloadQRCode } = useDownloadQRCode()
+export const DownloadButton: React.FC<IDownloadButton> = ({ disabled }) => {
+  const { handleDownloadQRCode } = useDownloadQRCode();
 
   const handleClick = () => {
     if (!disabled) {
       handleDownloadQRCode();
-    } else {
-      alert("Por favor, insira um link para gerar o QR Code.");
     }
-  }
+  };
 
-  return <S.DownloadButton
-    type={"button"}
-    value={"Download QR"}
-    onClick={handleClick}
-  />
-}
+  return (
+    <S.DownloadButton
+      type={"button"}
+      value={"Download QR"}
+      onClick={handleClick}
+      className={disabled ? "disabled-button" : ""}
+    />
+  );
+};

@@ -22,8 +22,10 @@ export const DownloadButton = styled.input`
     color: #000;
   }
 
-  .disabled {
+  &.disabled-button {
+    opacity: 0.5;
     cursor: not-allowed;
-    opacity: 0.6;
+    background-color: #ccc;
+    color: ${(props) => props.theme["--primary-200"]};
   }
 `;
