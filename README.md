@@ -1,51 +1,135 @@
-# React + TypeScript + Vite
+# QR Code Generator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## English
 
-Currently, two official plugins are available:
+A simple and efficient QR Code generator built with React and TypeScript. This application allows users to generate and download custom QR codes.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+- Generate QR codes from text/URLs
+- Download QR codes in PNG format
+- Responsive design
+- Easy-to-use interface
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## 🛠️ Technologies
 
-- Configure the top-level `parserOptions` property like this:
+- **React** - Frontend library
+- **TypeScript** - Static typing
+- **Styled Components** - Styling
+- **Vite** - Build tool and development environment
+- **React Qr Code** - QR code library
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## 📁 Project Structure
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+src/  
+├── components/  
+│ └── ui/  
+│ └── DownloadButton/  
+│ ├── index.tsx  
+│ └── styles.ts  
+├── hooks/  
+│ ├── useDownloadQRCode.ts  
+│ └── useGenerateQRCodeImage.ts  
+└── main.tsx  
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+### Key Components
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
-# qr-code-generator
+- **DownloadButton**: UI component responsible for triggering QR code downloads
+- **useDownloadQRCode**: Custom hook that handles the QR code download logic
+- **useGenerateQRCodeImage**: Custom hook that converts SVG to PNG format
+
+## 🚀 Getting Started
+
+1. Clone the repository
+
+2. Install dependencies
+
+3. Run the development server
+
+## 🌐 Browser Support
+
+The application supports all modern browsers:
+
+- Chrome
+- Firefox
+- Safari
+- Edge
+- Brave
+
+## 📝 License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## 👤 Author
+
+Vinicius Vaz
+
+---
+
+Feel free to contribute to this project by creating issues or submitting pull requests.
+
+# Português 
+
+Um gerador de QR Code simples e eficiente construído com React e TypeScript. Este aplicativo permite aos usuários gerar e baixar códigos QR personalizados.
+
+## 🚀 Recursos
+
+- Gere códigos QR a partir de texto/URLs
+- Baixe códigos QR em formato PNG
+- Design responsivo
+- Interface fácil de usar
+
+## 🛠️ Tecnologias
+
+- **React** - Biblioteca de front-end
+- **TypeScript** - Digitação estática
+- **Styled Components** - Estilização
+- **Vite** - Ferramenta de construção e ambiente de desenvolvimento
+- **React Qr Code** - Biblioteca de códigos QR
+
+## 📁 Estrutura do Projeto
+
+src/  
+├── components/  
+│ └── ui/  
+│ └── DownloadButton/  
+│ ├── index.tsx  
+│ └── styles.ts  
+├── hooks/  
+│ ├── useDownloadQRCode.ts  
+│ └── useGenerateQRCodeImage.ts  
+└── main.tsx  
+
+### Componentes principais
+
+- **DownloadButton**: componente UI responsável por acionar downloads de códigos QR
+- **useDownloadQRCode**: gancho personalizado que lida com a lógica de download do código QR
+- **useGenerateQRCodeImage**: gancho personalizado que converte SVG para o formato PNG
+
+## 🚀 Primeiros passos
+
+1. Clone o repositório
+
+2. Instale dependências
+
+3. Execute o servidor de desenvolvimento
+
+## 🌐 Suporte ao navegador
+
+O aplicativo oferece suporte a todos os navegadores modernos:
+
+- Cromo
+- Raposa de fogo
+- Safári
+- Borda
+- Corajoso
+
+## 📝 Licença
+
+Este projeto está licenciado sob a licença MIT - consulte o arquivo LICENSE para obter detalhes.
+
+## 👤 Autor
+
+Vinícius Vaz
+
+[![GitHub issues](https://img.shields.io/github/issues/viniciusagvaz/qr-code-generator)](https://github.com/viniciusagvaz/qr-code-generator/issues)
