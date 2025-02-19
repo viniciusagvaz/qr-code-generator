@@ -4,7 +4,7 @@ export const Title = styled.h1`
   height: 100%;
   width: 100%;
 
-  font-size: 2.4rem;
+  font-size: clamp(2rem, 5vw, 3rem);
   font-weight: bold;
   color: ${({ theme }) => theme["--primary-200"]};
 

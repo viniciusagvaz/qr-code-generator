@@ -1,9 +1,9 @@
 import styled from "styled-components";
 
 export const QrCodeContainer = styled.div`
-  width: 100%;
   min-height: 259px;
   max-width: 259px;
+  width: 100%;
 
   background-color: ${({ theme }) => theme["--primary-225"]};
   border-radius: 5px;
@@ -26,5 +26,4 @@ export const QrCodePlaceholder = styled.figure`
 
   padding: 0;
   margin: 0;
-
 `;

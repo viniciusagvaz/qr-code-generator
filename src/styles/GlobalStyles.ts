@@ -1,22 +1,21 @@
 import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyles = createGlobalStyle`
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 html,
 body {
     padding: 0;
     margin: 0;
     font-size: 62.5%;
-    }
+}
     
-    a {
-    color: inherit;
-    text-decoration: none;
-    }
-    
-    * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+a {
+color: inherit;
 }
 
 body {
@@ -26,10 +25,5 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  }
-  
-  #root {
-    margin: 0 auto;
-}
-
+  } 
 `;
