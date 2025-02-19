@@ -103,8 +103,8 @@ src/
 ### Componentes principais
 
 - **DownloadButton**: componente UI responsável por acionar downloads de códigos QR
-- **useDownloadQRCode**: gancho personalizado que lida com a lógica de download do código QR
-- **useGenerateQRCodeImage**: gancho personalizado que converte SVG para o formato PNG
+- **useDownloadQRCode**: hook personalizado que lida com a lógica de download do código QR
+- **useGenerateQRCodeImage**: hook personalizado que converte SVG para o formato PNG
 
 ## 🚀 Primeiros passos
 
@@ -118,11 +118,11 @@ src/
 
 O aplicativo oferece suporte a todos os navegadores modernos:
 
-- Cromo
-- Raposa de fogo
-- Safári
-- Borda
-- Corajoso
+- Chrome
+- Firefox
+- Safari
+- Edge
+- Brave
 
 ## 📝 Licença
 
